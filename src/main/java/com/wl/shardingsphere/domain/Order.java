@@ -9,6 +9,7 @@ import javax.persistence.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 @Table(name = "t_order")
 public class Order {
 
@@ -20,7 +21,7 @@ public class Order {
     @Column(name = "order_name")
     private String orderName;
 
-    @OneToMany
+    @ManyToOne
     private User user;
 
 }
