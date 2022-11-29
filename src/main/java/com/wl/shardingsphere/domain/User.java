@@ -4,6 +4,9 @@ import lombok.*;
 
 import javax.persistence.*;
 
+/**
+ * @author WangLang
+ */
 @Data
 @Getter
 @Setter
